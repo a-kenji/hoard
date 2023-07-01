@@ -18,7 +18,8 @@ use std::io::stdout;
 use std::time::Duration;
 use termion::raw::IntoRawMode;
 use termion::screen::IntoAlternateScreen;
-use tui::{backend::TermionBackend, widgets::ListState, Terminal};
+use ratatui::
+{backend::TermionBackend, widgets::ListState, Terminal};
 use crate::gpt::ask_gpt;
 
 pub struct State {
